@@ -1,0 +1,29 @@
+{
+    "name": "@coldstart/analyzer",
+    "version": "0.1.0",
+    "description": "Cold Start Analyzer SDK",
+    "main": "dist/index.js",
+    "data": "dist/index.d.js",
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "test": "vitest"
+    },
+    "keywords": [
+        "lambda",
+        "coldstart",
+        "serverless",
+        "performance"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "node-fetch": "^3.3.2"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.3",
+        "vitest": "^1.2.1",
+        "@types/node": "^20.11.5"
+    }
+}
