@@ -7,7 +7,7 @@ const moduleTimings: Record<string, number> = {};
 // @ts-ignore
 Module.prototype.require = function (id: string) {
     const start = process.hrtime.bigint();
-    const result = originalRequire.apply(this, arguments);
+    const result = originalRequire.call(this, id);
     const end = process.hrtime.bigint();
 
     const durationMs = Number(end - start) / 1e6;
